@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 /*configurações gerais*/
 
@@ -16,19 +16,91 @@ section:first-child{
     background-image: url('imagens/foto-primaria.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
+
+    /*Definindo posição absoluta para melhor organizar os itens na primeira tela*/
+
+a#telefone, #logo-site, #textoApresentacao, .LinkRedesSociais, .tracoVertical, button.botao{
+    position: absolute;
+}
+
+/*altura, largura e localização do logo*/
 
 #logo-site{
     width: 8rem; height: 3rem;
     margin: .8rem
 }
 
-.iconRedesSociais{
-    width: 1.8rem; height: 1.8rem;
-    margin-top: 3rem;
+/*localização, weight e cor da fonte do numero de telefone*/
+
+a#telefone{
+    margin: 1.2rem 0 1.2rem 60rem;
+    text-decoration: none;
+    font-weight: 700; color: white;
+    transition: .8s;
 }
 
+a#telefone:hover{
+    font-size: 1.1rem; color: #df6639;
+}
+
+/*tamanho das imagens das redes sociais*/
+
+.iconRedesSociais{
+    width: 2rem; height: 2rem;
+}
+
+/*Localização das redes sociais, dentro dos links*/
+
+.LinkRedesSociais{
+    margin-top: 17rem; margin-left: 4rem;
+}
+
+[href="https://twitter.com/b_oakland"]{
+    margin-top: 20rem;
+}
+
+[href="https://www.instagram.com/_oak_land/"]{
+    margin-top: 23rem;
+}
+
+/*altura, localização, preenchimento e cor dos traços verticais*/
+
 .tracoVertical{
-    width: .1rem; height: 12rem; background-color: black;
-    margin-left: 5rem;
+    width: .1rem; height: 10rem; background-color: white;
+    margin-left: 5rem; margin-top:6rem;
+}
+
+.tracoVertical:last-child{
+    margin-top: 26.5rem;
+}
+
+/*localização e tamanho/weight/entre outros do nome e do texto abaixo do nome*/
+
+#textoApresentacao{
+    width:43vw; height:33vh; color: white;
+    font-weight: 300; font-size: 1.8rem;
+    margin-top: 8rem; margin-left: 10rem;
+}
+
+p#nome{
+    font-size: 2.5rem; font-weight: 800; margin-top: 1rem;
+}
+
+p#texto{
+    margin-top: 2rem;
+}
+
+button.botao{
+    background-color: transparent;
+    font-size: 1.8rem; color:white;
+    padding: .5rem 1rem; margin-top: 25.5rem; margin-left: 10rem;
+    border: 3px solid;
+    border-image: linear-gradient(135deg, #df6639, #db6c3f) 1;
+    transition: .8s
+}
+
+button.botao:hover{
+    cursor:pointer;
 }
