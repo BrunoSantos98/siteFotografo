@@ -59,7 +59,7 @@ a#telefone:hover{
 }
 
 a>img{
-    transition:.8s;
+    transition:.2s;
 }
 
 [href="https://twitter.com/b_oakland"]{
@@ -68,6 +68,10 @@ a>img{
 
 [href="https://www.instagram.com/_oak_land/"]{
     margin-top: 23rem;
+}
+
+a>img:hover{
+    filter: invert(48%) sepia(10%) saturate(3207%) hue-rotate(330deg) brightness(100%) ;
 }
 
 /*altura, localização, preenchimento e cor dos traços verticais*/
