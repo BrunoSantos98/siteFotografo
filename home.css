@@ -21,7 +21,7 @@ section:first-child{
 
     /*Definindo posição absoluta para melhor organizar os itens na primeira tela*/
 
-a#telefone, #logo-site, #textoApresentacao, .LinkRedesSociais, .tracoVertical, button.botao{
+a#telefone, #logo-site, #textoApresentacao, .LinkRedesSociais, .tracoVertical, button.botao, #arrowDonwInverter{
     position: absolute;
 }
 
@@ -37,7 +37,7 @@ a#telefone, #logo-site, #textoApresentacao, .LinkRedesSociais, .tracoVertical, b
 a#telefone{
     margin: 1.2rem 0 1.2rem 60rem;
     text-decoration: none;
-    font-weight: 700; color: white;
+    font-weight: 700; color: #F2F2F2;
     transition: .8s;
 }
 
@@ -77,7 +77,7 @@ a>img:hover{
 /*altura, localização, preenchimento e cor dos traços verticais*/
 
 .tracoVertical{
-    width: .1rem; height: 10rem; background-color: white;
+    width: .1rem; height: 10rem; background-color: #F2F2F2;
     margin-left: 5rem; margin-top:6rem;
 }
 
@@ -88,7 +88,7 @@ a>img:hover{
 /*localização e tamanho/weight/entre outros do nome e do texto abaixo do nome*/
 
 #textoApresentacao{
-    width:43vw; height:33vh; color: white;
+    width:43vw; height:33vh; color: #F2F2F2;
     font-weight: 300; font-size: 1.8rem;
     margin-top: 8rem; margin-left: 10rem;
 }
@@ -105,7 +105,7 @@ p#texto{
 
 button.botao{
     background-color: transparent;
-    font-size: 1.4rem; color:white;
+    font-size: 1.4rem; color:#F2F2F2;
     padding: .5rem 1rem; margin-top: 25.5rem; margin-left: 10rem;
     border: 3px solid #df6639;
     border-radius: .7rem;
@@ -116,5 +116,31 @@ button.botao:hover{
     cursor:pointer;
     color: #df6639;
     border-image: transparent;
-    border: 3px solid white;
+    border: 3px solid #F2F2F2;
+}
+
+#arrowDonwInverter{
+    filter: invert(100%);
+    width: 2%; height: 4%;
+    margin-top: 35rem; margin-left:40rem;
+    animation-name: opacidade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    animation-timing-function: linear;
+}
+
+@keyframes opacidade {
+    from {width: 2%; height: 4%; opacity: 0;}
+    to {width: 4%; height: 8%; opacity: 1;}
+}
+
+/* finalização da tela INCIIAL e iniciio da CONTINUAÇLÃO do sie.*/
+
+#servicos{
+    background-color: #F2F2F2;
+}
+
+#servicos p{
+    color:#03070D;
 }
