@@ -137,10 +137,36 @@ button.botao:hover{
 
 /* finalização da tela INCIIAL e iniciio da CONTINUAÇLÃO do sie.*/
 
+span{
+    margin: 0 auto;
+}
+
 #servicos{
+    height: 60vh;
+    padding-top: 2rem;
     background-color: #F2F2F2;
 }
 
 #servicos p{
     color:#03070D;
+}
+
+#rowServicos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 2rem auto;
+}
+
+.blocoServico{
+    height: 13rem; width: 13rem;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blocoServico img{
+    height:2.8rem; width:2.8rem;
 }
