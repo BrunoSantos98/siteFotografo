@@ -6,8 +6,12 @@
     margin: 0; padding: 0; border: 0; box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif; margin: 0;
 }
 
 /*configurações da primeira parte da pagina*/
@@ -135,11 +139,8 @@ button.botao:hover{
     to {width: 4%; height: 8%; opacity: 1;}
 }
 
-/* finalização da tela INCIIAL e iniciio da CONTINUAÇLÃO do sie.*/
+/* finalização da tela INCIIAL e iniciio da CONTINUAÇLÃO do site.*/
 
-span{
-    margin: 0 auto;
-}
 
 #servicos{
     height: 60vh;
@@ -147,8 +148,11 @@ span{
     background-color: #F2F2F2;
 }
 
-#servicos p{
+#servicos p:first-child{
     color:#03070D;
+    font-weight: bold;
+    font-size:1.7rem;
+    text-align: center;
 }
 
 #rowServicos{
@@ -159,14 +163,42 @@ span{
 }
 
 .blocoServico{
-    height: 13rem; width: 13rem;
-    border: 3px solid black;
+    height: 13rem; width: 17rem;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
 }
 
 .blocoServico img{
     height:2.8rem; width:2.8rem;
+    margin-left: 7rem; margin-top: 1rem;
+}
+
+.blocoServico strong{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;    
+}
+
+/*finalização da parte de serviços*/
+
+.organizacaoOrangeRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 7rem;
+}
+
+.orangeRow{
+    width:48rem; height:3px;
+    background-color:#df6639;
+}
+
+.organizacaoOrangeRow span{
+    font-size: 1.7rem; margin-top: -1rem;
+}
+
+/*fim da parte de serviços e inicialização do slider de fotos*/
+
+#carrosselDeFotos img{
+    width: 49vw; height: 50vh;
 }
