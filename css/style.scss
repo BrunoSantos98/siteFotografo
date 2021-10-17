@@ -1,0 +1,97 @@
+@import 'base';
+
+#logo-site{
+    width: 12%; height: 8%;
+    margin: 1% 50vw 1% 1%;
+}
+
+body{
+    background-image: url('../imagens/foto-primaria.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+    section{
+        height: 100vh;
+
+        a{
+            text-decoration: none;
+            color: $orange-color;
+            transition: 700ms;
+
+            span{
+                position: absolute;
+                margin-top: 2%;
+                font-weight: bolder;
+            }
+
+            &:hover{
+                color: $white-color;
+            }
+        }
+
+        nav{
+            width: 12vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .line{
+                height:25vh; width:1px;
+                border: 1px solid $white-color;
+                margin: 10% 0;
+            }
+            
+            .line01{
+                margin-top:0;
+            }
+
+
+            ul{
+                list-style: none;
+                li{
+                    margin: 30% 0;                    
+                    
+                    img{ 
+                        width: 35px; height: 35px; 
+                    }
+                }
+            }
+        }
+
+        .boxApresentacao{
+            width: 45vw;
+            display: flex;
+            flex-direction: column;
+            margin-top: -60vh; margin-left: 17vw;
+
+            h1{
+                text-transform: uppercase;
+                margin-bottom: 5vh;
+                font-size: 39px;
+            }
+
+            p{
+                margin-bottom: 3vh;
+            }
+
+            button{
+                cursor: pointer;
+                width:35%;
+                padding: 3vh 1vw;
+                border: solid 3px $orange-color;
+                color: $orange-color;
+                background-color: transparent;
+                font-size:18px;
+                font-weight: bold;
+                transition: 700ms;
+
+                &:hover{
+                    border-color: $white-color;
+                    color:$white-color;
+                }
+
+            }
+        }
+    }
+}
