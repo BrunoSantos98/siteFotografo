@@ -9,3 +9,26 @@ $orange-color: #ED3E0C;
     font-family: 'Lato', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
+    /***********
+    ** Espaço dedicado a formatação das linhas laranjas
+    ***********/
+
+    @mixin divisoriaLaranja{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @mixin linhaLaranja{
+        height: 3px; width: 58vw;
+        background-color: $orange-color;
+    }
+
+    @mixin h2linhaLaranja{
+        position: relative;
+        right: 5vw;
+    }
