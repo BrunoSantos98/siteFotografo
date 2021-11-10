@@ -39,25 +39,25 @@
     <ul class='box-of-boxes'>
 
         <li class='box-trabalho'>
-            <img src="imagens/cameraIcon.png" alt="Fotografar">
+            <img src="imagens/cameraIcon.png" class='fotoScrollar' alt="Fotografar">
             <h4>Fotografar</h4>
             <p>Qualidade para cada uma de suas fotos.</p>
         </li>
 
         <li class='box-trabalho'>
-            <img src="imagens/videoCameraIcon.png" alt="Gravar Vídeos">
+            <img src="imagens/videoCameraIcon.png" class='fotoScrollar' alt="Gravar Vídeos">
             <h4>Gravar Vídeos</h4>
             <p>Guarde seus momentos para que eles permaneçam sempre seus.</p>
         </li>
 
         <li class='box-trabalho'>
-            <img src="imagens/imageIcon.png" alt="Retoque">
+            <img src="imagens/imageIcon.png" class='fotoScrollar' alt="Retoque">
             <h4>Retoque</h4>
             <p>Suas fotos ainda mais bonitas.</p>
         </li>
 
         <li class='box-trabalho'>
-            <img src="imagens/microphoneIcon.png" alt="Gravação de som">
+            <img src="imagens/microphoneIcon.png" class='fotoScrollar' alt="Gravação de som">
             <h4>Gravação de som</h4>
             <p>Apenas gravação de alta qualidade do seu som e do seu processamento</p>
         </li>
@@ -218,10 +218,14 @@
 
     <form>
         <input type="mail" id='emailForm' placeholder="Digite aqui seu Email">
-        <textarea name="MensagemMsg" id="MensagemMsg"></textarea>
+        <textarea name="MensagemMsg" id="mensagemMsg"></textarea>
         <input type="button" id='btn-form' value="Enviar Mensagem">
     </form>
 
+    <div class="msg">
+        <span class='campos-incorretos'>Favor corrija os campos incorretos</span>
+        <span class='msg-enviada'>Mensagem enviada com sucesso</span>
+    </div>
 </section>
 
 <footer class='rodape'>

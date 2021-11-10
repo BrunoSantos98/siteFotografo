@@ -130,6 +130,26 @@ body{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    opacity: 0;
+                    transform: translateY(-100%);
+                    transition: 1300ms;
+
+                    &:nth-child(2){
+                        transition:1600ms;
+                    }
+
+                    &:nth-child(3){
+                        transition:1900ms;
+                    }
+
+                    &:last-child{
+                        transition:2200ms;
+                    }
+
+                    &.visivel{
+                        transform:translateY(0%);
+                        opacity: 1;
+                    }
 
                     img {
                         width: 35px; height: 35px; margin: 3vh 0; 
@@ -152,7 +172,6 @@ body{
             width:69vw;
             height: 80vh;
             overflow: hidden ;
-            scroll-behavior: smooth;
             margin: 0 auto;
 
             ul.img-slides{
@@ -372,9 +391,11 @@ section.form-message{
     }
 
     form{
+
         display: flex;
         flex-direction: column;
         align-items:center;
+
         input#emailForm{
             width: 45vw;
             height:5vh;
@@ -404,10 +425,39 @@ section.form-message{
 
             &:hover{
                 cursor:pointer;
-                background-color: $black-color;
+                background-color: $white-color;
+                color:$orange-color;
             }
         }
     }
+
+    div.msg{
+        span.campos-incorretos{
+            position: absolute;
+            background-color: #f00;
+            border: 4px solid #c00;
+            border-radius:8px;
+            color:$white-color;
+            padding: 3vh;
+            left: -100%;
+            transition: 600ms ease;
+        }
+
+        span.msg-enviada{
+            position: absolute;
+            background-color: #008000;
+            border: 4px solid #060;
+            border-radius:8px;
+            color:$white-color;
+            padding: 3vh;
+            left:-100%;
+            transition: 600ms ease;
+        }
+
+        span.visible{
+            left:1%;
+        }
+}
 }
 
 /***********
