@@ -16,7 +16,7 @@
 ---
 
 <a href="https://github.com/BrunoSantos98">
- <sub><b>Thiago Marinho</b></sub></a> 
+ <sub><b>Bruno Santos</b></sub></a> 
 
 Feito com ❤️ por Bruno Santos 👋🏽!
 
